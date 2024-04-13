@@ -8,7 +8,7 @@ import androidx.room.TypeConverters
 
 @Database(
     entities = [Line::class],
-    version = 1
+    version = 2
 )
 @TypeConverters(DateConverter::class)
 abstract class MainDatabase: RoomDatabase() {
@@ -19,7 +19,7 @@ abstract class MainDatabase: RoomDatabase() {
             return Room.databaseBuilder(
                 context,
                 MainDatabase::class.java,
-                "test.db"
+                "MainDatabase.db"
             ).build()
         }
     }
