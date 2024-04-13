@@ -14,6 +14,6 @@ interface LineDao {
     @Delete
     suspend fun deleteLine(line: Line)
 
-    @Query("SELECT * FROM line ORDER BY dateAdded")
+    @Query("SELECT * FROM line")
     fun getLinesOrderedByDateAdded(): Flow<List<Line>>
 }

@@ -3,13 +3,14 @@ package ru.diabetes.composediabetestake2.data
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity
+@Entity(tableName = "line")
 data class Line (
-    val dateAdded: Long,
-    val suger: Double,
-    val boluse: Double,
-    val carbs: Double,
+    val dateAdded: String,
+    val timeAdded: String,
+    val suger: String,
+    val boluse: String,
+    val carbs: String,
 
     @PrimaryKey(autoGenerate = true)
-    val id: Int = 0
+    val id: Int? = null
 )
