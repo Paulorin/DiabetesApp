@@ -1,1 +1,3 @@
-A current version of android application for diabetic diary
+A version 1 of diabetic diary application.
+Supproted:
+- Input of values with storage in local SQLite database
